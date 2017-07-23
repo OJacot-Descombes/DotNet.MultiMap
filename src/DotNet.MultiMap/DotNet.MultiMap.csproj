@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  
+  <PropertyGroup>
+    <Version>2.0.0</Version>
+    <PackageId>DotNet.MultiMap</PackageId>
+    <Description>Dot Net generic collections multi map extensions</Description>
+    <Authors>.NET Foundation</Authors>
+    <Company>.NET Foundation</Company>
+    <Copyright>Copyright (c) .NET Foundation. All rights reserved.</Copyright>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Wallsmedia/DotNet.MultiMap</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Wallsmedia/DotNet.MultiMap.git</RepositoryUrl>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <TargetFrameworks>net462;net452;netcoreapp1.1</TargetFrameworks>
+    <AssemblyName>DotNet.MultiMap</AssemblyName>
+    <RootNamespace>DotNet.MultiMap</RootNamespace>
+    <PackageTags>MultiMap MultiMapHashSet MultiMapList</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration) == 'Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
