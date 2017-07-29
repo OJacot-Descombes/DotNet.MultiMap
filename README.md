@@ -1,9 +1,12 @@
 # DotNet.MultiMap
-Multimap of List&lt;T> and HashSet&lt;> grouping.
+MultiMap with using List&lt;T> and HashSet&lt;> grouping.
+Best solution for using with NetCore EntityFramework and NHibernate for case complex data manipulation and memory caching.
 
+## Nuget.org
 https://www.nuget.org/packages/DotNet.MultiMap/
 
-Test Examples of using:
+## Examples and Tests
+Test Examples of using from unit test:
 ``` c#
    MultiMapList<string, string> multiMapList = new MultiMapList<string, string>();
    string key = nameof(key);
