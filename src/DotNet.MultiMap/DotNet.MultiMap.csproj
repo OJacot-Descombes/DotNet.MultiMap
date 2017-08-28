@@ -1,27 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   
   <PropertyGroup>
-    <Version>2.0.1</Version>
+    <Version>2.2.0</Version>
     <PackageId>DotNet.MultiMap</PackageId>
     <Description>Dot Net generic collections multi map extensions.</Description>
-    <Authors>.NET Foundation</Authors>
-    <Company>.NET Foundation</Company>
+    <Authors>Wallsmedia Ltd</Authors>
     <Copyright>Copyright (c) .NET Foundation. All rights reserved.</Copyright>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Wallsmedia/DotNet.MultiMap</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Wallsmedia/DotNet.MultiMap.git</RepositoryUrl>
-    <AssemblyVersion>2.0.1.0</AssemblyVersion>
-    <FileVersion>2.0.1.0</FileVersion>
-    <TargetFrameworks>net452;net462;net47;netcoreapp1.1</TargetFrameworks>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <FileVersion>2.2.0.0</FileVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
     <AssemblyName>DotNet.MultiMap</AssemblyName>
     <RootNamespace>DotNet.MultiMap</RootNamespace>
     <PackageTags>MultiMap MultiMapHashSet MultiMapList</PackageTags>
-    <PackageReleaseNotes>v.2.0.1 add version for net 4.7</PackageReleaseNotes>
+    <PackageReleaseNotes>v.2.2.0  version for netstandard2.0</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageOutputPath>../../.nupkgs</PackageOutputPath>
   </PropertyGroup>
 
 </Project>

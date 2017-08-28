@@ -1,12 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.MultiMap", "src\DotNet.MultiMap\DotNet.MultiMap.csproj", "{0811C61D-C01E-4A91-9BAB-50577C520BA0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7311CD1-0150-454C-9DA1-8AB51B3376CC}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -37,5 +38,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0811C61D-C01E-4A91-9BAB-50577C520BA0} = {E778A14F-4ED9-4EB7-9BCD-EF65239F8BBC}
 		{0F1BA54C-49BE-4810-AB6F-BE6CDE50C0FC} = {B20E9119-3B14-48AF-A4B1-0B489A1AA32A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CA5A879-38D9-42CC-854B-C3E5E9FD055A}
 	EndGlobalSection
 EndGlobal
