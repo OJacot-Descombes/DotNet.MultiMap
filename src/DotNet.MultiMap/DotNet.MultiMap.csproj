@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   
   <PropertyGroup>
-    <Version>2.2.0</Version>
+    <Version>2.2.1</Version>
     <PackageId>DotNet.MultiMap</PackageId>
     <Description>Dot Net generic collections multi map extensions.</Description>
     <Authors>Wallsmedia Ltd</Authors>
@@ -10,14 +10,20 @@
     <PackageProjectUrl>https://github.com/Wallsmedia/DotNet.MultiMap</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Wallsmedia/DotNet.MultiMap.git</RepositoryUrl>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
-    <FileVersion>2.2.0.0</FileVersion>
+    <AssemblyVersion>2.2.1</AssemblyVersion>
+    <FileVersion>2.2.1</FileVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
     <AssemblyName>DotNet.MultiMap</AssemblyName>
     <RootNamespace>DotNet.MultiMap</RootNamespace>
     <PackageTags>MultiMap MultiMapHashSet MultiMapList</PackageTags>
-    <PackageReleaseNotes>v.2.2.0  version for netstandard2.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Singed assembly; version for netstandard2.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../../build/Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">
