@@ -99,16 +99,14 @@ namespace DotNet.Collections.Generic
         /// <returns>true if the value has  been map to the specified key element; otherwise, false.</returns>
         public bool TryToAddMapping(TKey key, TValue val)
         {
-            if (ContainsKey(key))
+            if (TryGetValue(key, out var set))
             {
-                var set = this[key];
                 set.Add(val);
             }
             else
             {
-                var tmp = new List<TValue>();
+                var tmp = new List<TValue> { val };
                 Add(key, tmp);
-                tmp.Add(val);
             }
             return true;
         }
@@ -122,12 +120,10 @@ namespace DotNet.Collections.Generic
         public bool TryToRemoveMapping(TKey key, TValue val)
         {
             bool result = false;
-            if (ContainsKey(key))
+            if (TryGetValue(key, out var set))
             {
-                var set = this[key];
                 result = set.Remove(val);
-                if (set.Count == 0)
-                {
+                if (set.Count == 0) {
                     Remove(key);
                 }
             }
@@ -142,9 +138,8 @@ namespace DotNet.Collections.Generic
         /// <returns>the number of links (duplicates).</returns>
         public int ContainsMapping(TKey key, TValue val)
         {
-            if (ContainsKey(key))
+            if (TryGetValue(key, out var set))
             {
-                var set = this[key];
                 return set.Count((v) => v.Equals(val));
             }
             return 0;
